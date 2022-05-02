@@ -12,7 +12,7 @@ $line-color: hsl(215, 32%, 27%);
 $desktop-body-width: 1440px;
 $desktop-body-height: 900px;
 $desktop-card-width: 350px;
-$desktop-card-height: 600px;
+$desktop-card-height: 596px;
 $desktop-card-img-side: 300px;
 
 // mobile
@@ -43,10 +43,9 @@ body {
   align-items: center;
 }
 
-
 .card {
   background-color: $bg-card-color;
-  border-radius: 20px;
+  border-radius: 15px;
   width: $desktop-card-width;
   height: $desktop-card-height;
   @media screen and (max-width: $mobile-body-width) {
@@ -79,7 +78,7 @@ body {
     &-bg {
       position: absolute;
       width: 100%;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     &-top {
@@ -129,7 +128,7 @@ body {
     margin-bottom: 1.25em;
     @media screen and (max-width: $mobile-body-width) {
       margin-top: 0.8em;
-      margin-bottom: 0.8em;
+      margin-bottom: 1em;
     }
   }
 
@@ -166,6 +165,9 @@ body {
     height: 1px;
     border: 0px;
     margin-bottom: 1em;
+    @media screen and (max-width: $mobile-body-width) {
+      margin-bottom: 0.8em;
+    }
   }
 
   &__creator {
