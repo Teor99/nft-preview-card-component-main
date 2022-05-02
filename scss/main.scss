@@ -7,11 +7,17 @@ $text-color: hsl(215, 51%, 70%);
 $balance-color: hsl(178, 100%, 50%);
 $line-color: hsl(215, 32%, 27%);
 
-$desktop-width: 1440px;
-$desktop-height: 900px;
+// desktop
+$desktop-body-width: 1440px;
+$desktop-body-height: 900px;
+$desktop-card-width: 350px;
+$desktop-card-height: 600px;
 
-$mobile-width: 375px;
-$mobile-height: 667px;
+// mobile
+$mobile-body-width: 375px;
+$mobile-body-height: 667px;
+$mobile-card-width: 328px;
+$mobile-card-height: 544px;
 
 * {
   box-sizing: border-box;
@@ -20,8 +26,8 @@ $mobile-height: 667px;
 }
 
 body {
-  min-width: $desktop-width;
-  min-height: $desktop-height;
+  min-width: $desktop-body-width;
+  min-height: $desktop-body-height;
   width: 100%;
   height: 100%;
   background-color: $bg-main-color;
@@ -30,18 +36,11 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 375px) {
-  body {
-    min-width: $mobile-width;
-    min-height: $mobile-height;
-  }
-}
-
 .card {
   background-color: $bg-card-color;
   border-radius: 20px;
-  width: 350px;
-  height: 600px;
+  width: $desktop-card-width;
+  height: $desktop-card-height;
   padding: 25px;
 
   font-family: "Outfit", sans-serif;
@@ -92,7 +91,7 @@ body {
     align-items: center;
 
     &-text {
-      margin-left: 7px;
+      margin-left: 0.4em;
     }
   }
 
@@ -102,7 +101,7 @@ body {
     align-items: center;
 
     &-text {
-      margin-left: 6px;
+      margin-left: 0.4em;
       font-size: 0.9em;
     }
   }
@@ -111,13 +110,12 @@ body {
     background: $line-color;
     height: 1px;
     border: 0px;
-    margin-bottom: 18px;
+    margin-bottom: 1em;
   }
 
   &__creator {
     display: flex;
     align-items: center;
-    
 
     &-avatar {
       width: 33px;
@@ -132,6 +130,47 @@ body {
 
       span {
         color: $heading-color;
+      }
+    }
+  }
+}
+
+// media for mobile
+@media screen and (max-width: 375px) {
+  body {
+    min-width: $mobile-body-width;
+    min-height: $mobile-body-height;
+  }
+
+  .card {
+    width: $mobile-card-width;
+    height: $mobile-card-height;
+
+    &__title {
+      margin-top: 0.8em;
+      margin-bottom: 0.6em;
+    }
+
+    &__text {
+      font-size: 0.9em;
+      line-height: 1.6em;
+    }
+
+    &__balance-and-time-left {
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+    }
+
+    &__creator {
+      &-text {
+        font-size: 0.85em;
+      }
+    }
+
+    &__time-left {
+      &-text {
+        margin-left: 0.7em;
+        font-size: 0.8em;
       }
     }
   }
