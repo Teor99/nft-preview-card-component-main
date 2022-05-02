@@ -23,6 +23,13 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    min-width: 375px;
+    min-height: 667px;
+  }
+}
+
 .card {
   background-color: #14253d;
   border-radius: 20px;
@@ -33,12 +40,19 @@ body {
   font-size: 18px;
 }
 
-.card a {
+@media screen and (max-width: 375px) {
+  .card {
+    width: 328px;
+    height: 544px;
+  }
+}
+
+.card__link {
   color: white;
   text-decoration: none;
 }
 
-.card a:hover {
+.card__link:hover {
   color: #00fff7;
 }
 
@@ -60,10 +74,24 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 375px) {
+  .card__title {
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
+  }
+}
+
 .card__text {
   line-height: 1.4em;
   font-weight: 300;
   color: #8bacda;
+}
+
+@media screen and (max-width: 375px) {
+  .card__text {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
 }
 
 .card__balance-and-time-left {
@@ -75,6 +103,13 @@ body {
           justify-content: space-between;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
+}
+
+@media screen and (max-width: 375px) {
+  .card__balance-and-time-left {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
 }
 
 .card__balance {
@@ -90,6 +125,13 @@ body {
 
 .card__balance-text {
   margin-left: 0.4em;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 375px) {
+  .card__balance-text {
+    font-size: 0.95em;
+  }
 }
 
 .card__time-left {
@@ -107,7 +149,14 @@ body {
   font-size: 0.9em;
 }
 
-.card hr {
+@media screen and (max-width: 375px) {
+  .card__time-left-text {
+    margin-left: 0.4em;
+    font-size: 0.85em;
+  }
+}
+
+.card__hr {
   background: #2f415b;
   height: 1px;
   border: 0px;
@@ -130,41 +179,13 @@ body {
 }
 
 .card__creator-text {
-  margin-left: 18px;
+  margin-left: 1em;
   color: #8bacda;
   font-size: 0.9em;
 }
 
-.card__creator-text span {
-  color: white;
-}
-
 @media screen and (max-width: 375px) {
-  body {
-    min-width: 375px;
-    min-height: 667px;
-  }
-  .card {
-    width: 328px;
-    height: 544px;
-  }
-  .card__title {
-    margin-top: 0.8em;
-    margin-bottom: 0.6em;
-  }
-  .card__text {
-    font-size: 0.9em;
-    line-height: 1.6em;
-  }
-  .card__balance-and-time-left {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-  }
   .card__creator-text {
     font-size: 0.85em;
-  }
-  .card__time-left-text {
-    margin-left: 0.7em;
-    font-size: 0.8em;
   }
 }

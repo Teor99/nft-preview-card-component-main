@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+// colors
 $bg-main-color: hsl(217, 54%, 11%);
 $bg-card-color: hsl(216, 50%, 16%);
 $heading-color: hsl(0, 0%, 100%);
@@ -28,6 +29,10 @@ $mobile-card-height: 544px;
 body {
   min-width: $desktop-body-width;
   min-height: $desktop-body-height;
+  @media screen and (max-width: $mobile-body-width) {
+    min-width: $mobile-body-width;
+    min-height: $mobile-body-height;
+  }
   width: 100%;
   height: 100%;
   background-color: $bg-main-color;
@@ -41,12 +46,16 @@ body {
   border-radius: 20px;
   width: $desktop-card-width;
   height: $desktop-card-height;
+  @media screen and (max-width: $mobile-body-width) {
+    width: $mobile-card-width;
+    height: $mobile-card-height;
+  }
   padding: 25px;
 
   font-family: "Outfit", sans-serif;
   font-size: 18px;
 
-  a {
+  &__link {
     color: $heading-color;
     text-decoration: none;
     &:hover {
@@ -57,7 +66,6 @@ body {
   &__main-image {
     width: 100%;
     border-radius: 10px;
-
     &:hover {
       filter: hue-rotate(270deg);
     }
@@ -66,12 +74,20 @@ body {
   &__title {
     margin-top: 0.9em;
     margin-bottom: 0.8em;
+    @media screen and (max-width: $mobile-body-width) {
+      margin-top: 0.8em;
+      margin-bottom: 0.6em;
+    }
     font-size: 1.25em;
     font-weight: 400;
     color: $heading-color;
   }
 
   &__text {
+    @media screen and (max-width: $mobile-body-width) {
+      font-size: 0.9em;
+      line-height: 1.6em;
+    }
     line-height: 1.4em;
     font-weight: 300;
     color: $text-color;
@@ -82,6 +98,10 @@ body {
     justify-content: space-between;
     margin-top: 1.25em;
     margin-bottom: 1.25em;
+    @media screen and (max-width: $mobile-body-width) {
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+    }
   }
 
   &__balance {
@@ -89,9 +109,12 @@ body {
     font-size: 0.9em;
     display: flex;
     align-items: center;
-
     &-text {
       margin-left: 0.4em;
+      font-size: 1em;
+      @media screen and (max-width: $mobile-body-width) {
+        font-size: 0.95em;
+      }
     }
   }
 
@@ -99,14 +122,17 @@ body {
     color: $text-color;
     display: flex;
     align-items: center;
-
     &-text {
       margin-left: 0.4em;
       font-size: 0.9em;
+      @media screen and (max-width: $mobile-body-width) {
+        margin-left: 0.4em;
+        font-size: 0.85em;
+      }
     }
   }
 
-  hr {
+  &__hr {
     background: $line-color;
     height: 1px;
     border: 0px;
@@ -116,61 +142,17 @@ body {
   &__creator {
     display: flex;
     align-items: center;
-
     &-avatar {
       width: 33px;
       border: solid 1px $heading-color;
       border-radius: 50%;
     }
-
     &-text {
-      margin-left: 18px;
+      margin-left: 1em;
       color: $text-color;
       font-size: 0.9em;
-
-      span {
-        color: $heading-color;
-      }
-    }
-  }
-}
-
-// media for mobile
-@media screen and (max-width: 375px) {
-  body {
-    min-width: $mobile-body-width;
-    min-height: $mobile-body-height;
-  }
-
-  .card {
-    width: $mobile-card-width;
-    height: $mobile-card-height;
-
-    &__title {
-      margin-top: 0.8em;
-      margin-bottom: 0.6em;
-    }
-
-    &__text {
-      font-size: 0.9em;
-      line-height: 1.6em;
-    }
-
-    &__balance-and-time-left {
-      margin-top: 0.8em;
-      margin-bottom: 0.8em;
-    }
-
-    &__creator {
-      &-text {
+      @media screen and (max-width: $mobile-body-width) {
         font-size: 0.85em;
-      }
-    }
-
-    &__time-left {
-      &-text {
-        margin-left: 0.7em;
-        font-size: 0.8em;
       }
     }
   }
