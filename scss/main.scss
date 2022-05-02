@@ -13,12 +13,14 @@ $desktop-body-width: 1440px;
 $desktop-body-height: 900px;
 $desktop-card-width: 350px;
 $desktop-card-height: 600px;
+$desktop-card-img-side: 300px;
 
 // mobile
 $mobile-body-width: 375px;
 $mobile-body-height: 667px;
 $mobile-card-width: 328px;
 $mobile-card-height: 544px;
+$mobile-card-img-side: 277px;
 
 * {
   box-sizing: border-box;
@@ -41,6 +43,7 @@ body {
   align-items: center;
 }
 
+
 .card {
   background-color: $bg-card-color;
   border-radius: 20px;
@@ -55,6 +58,41 @@ body {
   font-family: "Outfit", sans-serif;
   font-size: 18px;
 
+  &__main-img {
+    position: relative;
+    width: $desktop-card-img-side;
+    height: $desktop-card-img-side;
+    @media screen and (max-width: $mobile-body-width) {
+      width: $mobile-card-img-side;
+      height: $mobile-card-img-side;
+    }
+
+    &:hover &-bg {
+      opacity: 0.5;
+      filter: invert(1) hue-rotate(140deg) contrast(1.4) saturate(1.6) blur(1.6px);
+    }
+
+    &:hover &-top {
+      opacity: 1;
+    }
+
+    &-bg {
+      position: absolute;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    &-top {
+      transition: 2s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+
   &__link {
     color: $heading-color;
     text-decoration: none;
@@ -63,19 +101,10 @@ body {
     }
   }
 
-  &__main-image {
-    width: 100%;
-    border-radius: 10px;
-    &:hover {
-      filter: hue-rotate(270deg);
-    }
-  }
-
   &__title {
-    margin-top: 0.9em;
+    margin-top: 1em;
     margin-bottom: 0.8em;
     @media screen and (max-width: $mobile-body-width) {
-      margin-top: 0.8em;
       margin-bottom: 0.6em;
     }
     font-size: 1.25em;
@@ -96,7 +125,7 @@ body {
   &__balance-and-time-left {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.25em;
+    margin-top: 1.35em;
     margin-bottom: 1.25em;
     @media screen and (max-width: $mobile-body-width) {
       margin-top: 0.8em;
