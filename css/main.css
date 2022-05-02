@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1440px;
+  min-height: 900px;
+  width: 100%;
+  height: 100%;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    min-width: 375px;
+    min-height: 667px;
+  }
+}
+
+.card {
+  background-color: #14253d;
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #00fff7;
+}
+
+.card__main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__main-image:hover {
+  -webkit-filter: hue-rotate(270deg);
+          filter: hue-rotate(270deg);
+}
+
+.card__title {
+  margin-top: 0.9em;
+  margin-bottom: 0.8em;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: white;
+}
+
+.card__text {
+  line-height: 1.4em;
+  font-weight: 300;
+  color: #8bacda;
+}
+
+.card__balance-and-time-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.card__balance {
+  color: #00fff7;
+  font-size: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__balance-text {
+  margin-left: 7px;
+}
+
+.card__time-left {
+  color: #8bacda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__time-left-text {
+  margin-left: 6px;
+  font-size: 0.9em;
+}
+
+.card hr {
+  background: #2f415b;
+  height: 1px;
+  border: 0px;
+  margin-bottom: 18px;
+}
+
+.card__creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__creator-avatar {
+  width: 33px;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+
+.card__creator-text {
+  margin-left: 18px;
+  color: #8bacda;
+  font-size: 0.9em;
+}
+
+.card__creator-text span {
+  color: white;
+}

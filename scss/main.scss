@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+$bg-main-color: hsl(217, 54%, 11%);
+$bg-card-color: hsl(216, 50%, 16%);
+$heading-color: hsl(0, 0%, 100%);
+$text-color: hsl(215, 51%, 70%);
+$balance-color: hsl(178, 100%, 50%);
+$line-color: hsl(215, 32%, 27%);
+
+$desktop-width: 1440px;
+$desktop-height: 900px;
+
+$mobile-width: 375px;
+$mobile-height: 667px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: $desktop-width;
+  min-height: $desktop-height;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    min-width: $mobile-width;
+    min-height: $mobile-height;
+  }
+}
+
+.card {
+  background-color: $bg-card-color;
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+
+  a {
+    color: $heading-color;
+    text-decoration: none;
+    &:hover {
+      color: $balance-color;
+    }
+  }
+
+  &__main-image {
+    width: 100%;
+    border-radius: 10px;
+
+    &:hover {
+      filter: hue-rotate(270deg);
+    }
+  }
+
+  &__title {
+    margin-top: 0.9em;
+    margin-bottom: 0.8em;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: $heading-color;
+  }
+
+  &__text {
+    line-height: 1.4em;
+    font-weight: 300;
+    color: $text-color;
+  }
+
+  &__balance-and-time-left {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  &__balance {
+    color: $balance-color;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+
+    &-text {
+      margin-left: 7px;
+    }
+  }
+
+  &__time-left {
+    color: $text-color;
+    display: flex;
+    align-items: center;
+
+    &-text {
+      margin-left: 6px;
+      font-size: 0.9em;
+    }
+  }
+
+  hr {
+    background: $line-color;
+    height: 1px;
+    border: 0px;
+    margin-bottom: 18px;
+  }
+
+  &__creator {
+    display: flex;
+    align-items: center;
+    
+
+    &-avatar {
+      width: 33px;
+      border: solid 1px $heading-color;
+      border-radius: 50%;
+    }
+
+    &-text {
+      margin-left: 18px;
+      color: $text-color;
+      font-size: 0.9em;
+
+      span {
+        color: $heading-color;
+      }
+    }
+  }
+}
