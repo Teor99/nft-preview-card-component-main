@@ -7,10 +7,7 @@
 }
 
 body {
-  min-width: 1440px;
-  min-height: 900px;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #0d192b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,13 +18,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 375px) {
-  body {
-    min-width: 375px;
-    min-height: 667px;
-  }
 }
 
 .card {
@@ -101,7 +91,7 @@ body {
   margin-top: 1em;
   margin-bottom: 0.8em;
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 600;
   color: white;
 }
 
@@ -156,6 +146,7 @@ body {
 .card__balance-text {
   margin-left: 0.4em;
   font-size: 1em;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 375px) {

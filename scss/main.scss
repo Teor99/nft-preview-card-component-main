@@ -9,15 +9,13 @@ $balance-color: hsl(178, 100%, 50%);
 $line-color: hsl(215, 32%, 27%);
 
 // desktop
-$desktop-body-width: 1440px;
-$desktop-body-height: 900px;
 $desktop-card-width: 350px;
 $desktop-card-height: 596px;
 $desktop-card-img-side: 300px;
 
 // mobile
-$mobile-body-width: 375px;
-$mobile-body-height: 667px;
+$mobile-max-width: 375px;
+//
 $mobile-card-width: 328px;
 $mobile-card-height: 544px;
 $mobile-card-img-side: 277px;
@@ -29,14 +27,7 @@ $mobile-card-img-side: 277px;
 }
 
 body {
-  min-width: $desktop-body-width;
-  min-height: $desktop-body-height;
-  @media screen and (max-width: $mobile-body-width) {
-    min-width: $mobile-body-width;
-    min-height: $mobile-body-height;
-  }
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: $bg-main-color;
   display: flex;
   justify-content: center;
@@ -48,7 +39,7 @@ body {
   border-radius: 15px;
   width: $desktop-card-width;
   height: $desktop-card-height;
-  @media screen and (max-width: $mobile-body-width) {
+  @media screen and (max-width: $mobile-max-width) {
     width: $mobile-card-width;
     height: $mobile-card-height;
   }
@@ -61,7 +52,7 @@ body {
     position: relative;
     width: $desktop-card-img-side;
     height: $desktop-card-img-side;
-    @media screen and (max-width: $mobile-body-width) {
+    @media screen and (max-width: $mobile-max-width) {
       width: $mobile-card-img-side;
       height: $mobile-card-img-side;
     }
@@ -103,16 +94,16 @@ body {
   &__title {
     margin-top: 1em;
     margin-bottom: 0.8em;
-    @media screen and (max-width: $mobile-body-width) {
+    @media screen and (max-width: $mobile-max-width) {
       margin-bottom: 0.6em;
     }
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 600;
     color: $heading-color;
   }
 
   &__text {
-    @media screen and (max-width: $mobile-body-width) {
+    @media screen and (max-width: $mobile-max-width) {
       font-size: 0.9em;
       line-height: 1.6em;
     }
@@ -126,7 +117,7 @@ body {
     justify-content: space-between;
     margin-top: 1.35em;
     margin-bottom: 1.25em;
-    @media screen and (max-width: $mobile-body-width) {
+    @media screen and (max-width: $mobile-max-width) {
       margin-top: 0.8em;
       margin-bottom: 1em;
     }
@@ -140,7 +131,8 @@ body {
     &-text {
       margin-left: 0.4em;
       font-size: 1em;
-      @media screen and (max-width: $mobile-body-width) {
+      font-weight: 600;
+      @media screen and (max-width: $mobile-max-width) {
         font-size: 0.95em;
       }
     }
@@ -153,7 +145,7 @@ body {
     &-text {
       margin-left: 0.4em;
       font-size: 0.9em;
-      @media screen and (max-width: $mobile-body-width) {
+      @media screen and (max-width: $mobile-max-width) {
         margin-left: 0.4em;
         font-size: 0.85em;
       }
@@ -165,7 +157,7 @@ body {
     height: 1px;
     border: 0px;
     margin-bottom: 1em;
-    @media screen and (max-width: $mobile-body-width) {
+    @media screen and (max-width: $mobile-max-width) {
       margin-bottom: 0.8em;
     }
   }
@@ -182,7 +174,7 @@ body {
       margin-left: 1em;
       color: $text-color;
       font-size: 0.9em;
-      @media screen and (max-width: $mobile-body-width) {
+      @media screen and (max-width: $mobile-max-width) {
         font-size: 0.85em;
       }
     }
