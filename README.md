@@ -1,8 +1,8 @@
 # Frontend Mentor - NFT preview card component coding challenge [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 
-My challenge: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-jOPCcu4CN)
+My challenge: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-ryLQ1-ASc)
 <br/>
-My solution: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-jOPCcu4CN)
+My solution: [link](https://www.frontendmentor.io/solutions/nft-preview-card-ryLQ1-ASc)
 <br/>
 Deployed site: [link](https://teor99.github.io/nft-preview-card-component-main/)
 
