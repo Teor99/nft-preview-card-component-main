@@ -60,25 +60,21 @@ body {
   }
 }
 
-.card__main-img:hover .card__main-img-bg {
-  opacity: 0.5;
-  -webkit-filter: invert(1) hue-rotate(140deg) contrast(1.4) saturate(1.6) blur(1.6px);
-          filter: invert(1) hue-rotate(140deg) contrast(1.4) saturate(1.6) blur(1.6px);
-}
-
-.card__main-img:hover .card__main-img-top {
-  opacity: 1;
-}
-
 .card__main-img-bg {
   position: absolute;
   width: 100%;
   border-radius: 8px;
 }
 
+.card__main-img:hover .card__main-img-bg {
+  opacity: 0.5;
+  -webkit-filter: invert(1) hue-rotate(140deg) contrast(1.4) saturate(1.6) blur(1.6px);
+          filter: invert(1) hue-rotate(140deg) contrast(1.4) saturate(1.6) blur(1.6px);
+}
+
 .card__main-img-top {
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -86,6 +82,10 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.card__main-img:hover .card__main-img-top {
+  opacity: 1;
 }
 
 .card__link {

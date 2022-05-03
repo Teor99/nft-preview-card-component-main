@@ -2,9 +2,9 @@
 
 My challenge: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-jOPCcu4CN)
 <br/>
-My solution: [link](#)
+My solution: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-jOPCcu4CN)
 <br/>
-Deployed site: [link](#)
+Deployed site: [link](https://teor99.github.io/nft-preview-card-component-main/)
 
 ## Desktop design - 1440 x 900
 ![](./design/desktop-design.jpg)
