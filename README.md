@@ -1,21 +1,17 @@
-# Frontend Mentor - NFT preview card component coding challenge [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+# Frontend Mentor - NFT preview card component
+![](./design/desktop-preview.jpg)
 
-My challenge: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-ryLQ1-ASc)
-<br/>
-My solution: [link](https://www.frontendmentor.io/solutions/nft-preview-card-ryLQ1-ASc)
-<br/>
-Deployed site: [link](https://teor99.github.io/nft-preview-card-component-main/)
+## Links
 
-## Desktop design - 1440 x 900
-![](./design/desktop-design.jpg)
+- Frontend Mentor coding challenge [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+- My challenge: [link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-ryLQ1-ASc)
+- My solution: [link](https://www.frontendmentor.io/solutions/nft-preview-card-ryLQ1-ASc)
+- Deployed to github.io site: [link](https://teor99.github.io/nft-preview-card-component-main/)
 
-## Desktop active states design - 1440 x 900
-![](./design/active-states.jpg)
-
-## Mobile design - 375 x 667
-![](./design/mobile-design.jpg)
-
-# Front-end Style Guide
+## Design
+- Desktop design - 1440 x 900 [link](./design/desktop-design.jpg)
+- Desktop active states design - 1440 x 900 [link](./design/active-states.jpg)
+- Mobile design - 375 x 667 [link](./design/mobile-design.jpg)
 
 ## Layout
 
@@ -48,3 +44,10 @@ The designs were created to the following widths:
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 300, 400, 600
+
+## Used tools:
+- VSCode + extensions:
+  - Live Server
+  - Live Sass Compiler
+- Chrome browser + extensions:
+  - PerfectPixel
