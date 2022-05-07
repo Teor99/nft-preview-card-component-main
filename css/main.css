@@ -30,7 +30,7 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card {
     width: 328px;
     height: 544px;
@@ -43,7 +43,7 @@ body {
   height: 300px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__main-img {
     width: 277px;
     height: 277px;
@@ -95,7 +95,7 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__title {
     margin-bottom: 0.6em;
   }
@@ -107,7 +107,7 @@ body {
   color: #8bacda;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__text {
     font-size: 0.9em;
     line-height: 1.6em;
@@ -125,7 +125,7 @@ body {
   margin-bottom: 1.25em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__balance-and-time-left {
     margin-top: 0.8em;
     margin-bottom: 1em;
@@ -149,7 +149,7 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__balance-text {
     font-size: 0.95em;
   }
@@ -170,7 +170,7 @@ body {
   font-size: 0.9em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__time-left-text {
     margin-left: 0.4em;
     font-size: 0.85em;
@@ -184,7 +184,7 @@ body {
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__hr {
     margin-bottom: 0.8em;
   }
@@ -211,7 +211,7 @@ body {
   font-size: 0.9em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .card__creator-text {
     font-size: 0.85em;
   }
