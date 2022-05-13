@@ -27,7 +27,8 @@ $mobile-card-img-side: 277px;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2em 0;
   background-color: $bg-main-color;
   display: flex;
   justify-content: center;

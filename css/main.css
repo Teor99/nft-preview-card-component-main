@@ -7,7 +7,8 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2em 0;
   background-color: #0d192b;
   display: -webkit-box;
   display: -ms-flexbox;
